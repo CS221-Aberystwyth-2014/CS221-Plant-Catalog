@@ -9,3 +9,14 @@ Example:
 FR1 - Check that system can store the first two days of the earliest permitted year. - Enter 1st March 1971 at date prompt. Hit return, and enter 2nd March 1971 at date prompt. - List of stored dates should now include those dates. - Data is stored.correctly.
 -----------------
 
+FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting to fill in contact details. - The user should be prompted to fill in contact details.
+
+FR2 - Check that the user is able to select a natural reserve for the visit. - Start a new recording and identify the site by starting typing its name. - Drop down menu showing suggestions of the natural reserve. - Suggestions shown are relevant to what the user has started typing in.
+
+FR3 - Check that the user is able to select a species or provide a name if it’s not available. - When adding a new species the user will start typing its name. - Drop down menu showing suggestions of species. - Suggestions shown are relevant to what the user has started typing in.
+
+FR4 - Check that the GPS coordinates are obtained correctly from the Android OS. - Record a new species and add the automatically obtained GPS coordinates. - GPS coordinates are shown on the details of the newly recorded species. - GPS coordinates are the same as GPS coordinates recorded in parallel to this test.
+
+FR5 - Check that the user is able to delete one species from a recording. - When viewing the list of species in an unsent recording select one species to delete. - Species disappears from the list of species. - Species and all its details are deleted from the recording.
+
+FR5 - Check that the user is able to delete a whole recording. - When viewing the list of unsent recordings select one recording to delete. - Recording disappears from the list of recordings. - Recording and all the species in it are deleted.
