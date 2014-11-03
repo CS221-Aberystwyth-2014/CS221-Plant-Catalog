@@ -1,0 +1,11 @@
+Software tests!
+----------------
+Everything below should be the following format:
+
+FR# - Test Content - Input - Output - Pass Criteria > All on one line!
+
+Example:
+
+FR1 - Check that system can store the first two days of the earliest permitted year. - Enter 1st March 1971 at date prompt. Hit return, and enter 2nd March 1971 at date prompt. - List of stored dates should now include those dates. - Data is stored.correctly.
+-----------------
+
