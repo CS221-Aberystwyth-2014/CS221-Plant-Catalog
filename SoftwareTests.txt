@@ -18,5 +18,5 @@ FR3 - Check that the user is able to select a species or provide a name if it’
 FR4 - Check that the GPS coordinates are obtained correctly from the Android OS. - Record a new species and add the automatically obtained GPS coordinates. - GPS coordinates are shown on the details of the newly recorded species. - GPS coordinates are the same as GPS coordinates recorded in parallel to this test.
 
 FR5 - Check that the user is able to delete one species from a recording. - When viewing the list of species in an unsent recording select one species to delete. - Species disappears from the list of species. - Species and all its details are deleted from the recording.
-
 FR5 - Check that the user is able to delete a whole recording. - When viewing the list of unsent recordings select one recording to delete. - Recording disappears from the list of recordings. - Recording and all the species in it are deleted.
+FR5 - Check that the user is able to update an unsubmitted recording. - 'Edit' button is clicked on the summary page. - User taken to a page where they are able to ammend the recording. - Recording is updated correctly and the user is taken back to the summary page.
