@@ -34,3 +34,6 @@ FR5 - Check that the user is able to delete one species from a recording. - When
 FR5 - Check that the user is able to delete a whole recording. - When viewing the list of unsent recordings select one recording to delete. - Recording disappears from the list of recordings. - Recording and all the species in it are deleted.
 
 FR5 - Check that the user is able to update an unsubmitted recording. - 'Edit' button is clicked on the summary page. - User taken to a page where they are able to ammend the recording. - Recording is updated correctly and the user is taken back to the summary page.
+
+FR6 - Check that the user that the user can send a recording to the server. - The recording button on the app is pressed. - The recording is displayed on the website and is added to the list. - The Recording is sent to the server and then added to the database.Inline with the specification documents. 
+
