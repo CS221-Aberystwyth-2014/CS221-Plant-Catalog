@@ -11,12 +11,22 @@ FR1 - Check that system can store the first two days of the earliest permitted y
 
 FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting to fill in contact details. - The user should be prompted to fill in contact details.
 
-FR2 - Check that the user is able to select a natural reserve for the visit. - Start a new recording and identify the site by starting typing its name. - Drop down menu showing suggestions of the natural reserve. - Suggestions shown are relevant to what the user has started typing in.
+FR2 - Check that the user is able to select a natural reserve for the visit. - Start a new recording and identify the site by starting typing its name. - Drop down menu showing suggestions of the natural reserve. - Suggestions shown are relevant to what the user has started typing.
 
-FR3 - Check that the user is able to select a species or provide a name if it’s not available. - When adding a new species the user will start typing its name. - Drop down menu showing suggestions of species. - Suggestions shown are relevant to what the user has started typing in.
+FR3 - Check that the user is able to select a species or provide a name if it’s not available. - When adding a new species the user will start typing its name into the species text field. - Drop down menu showing suggestions of species. - Suggestions shown are relevant to what the user has started typing.
 
-FR4 - Check that the GPS coordinates are obtained correctly from the Android OS. - Record a new species and add the automatically obtained GPS coordinates. - GPS coordinates are shown on the details of the newly recorded species. - GPS coordinates are the same as GPS coordinates recorded in parallel to this test.
+FR4 - Check that the GPS coordinates are obtained correctly from the Android OS. - Record a new species and touch the "Obtain GPS coordinates" button. - GPS coordinates are shown on the details of the newly recorded species. - GPS coordinates are the same as GPS coordinates recorded in parallel to this test.
+
+FR4 - Check that the radio buttons for the abundance store the correct data. - Record a new species and select a radio button "DAFOR". - The selected radio button gets selected (filled in). - The selected abundance is stored correctly in the species record (shown in the summary view).
+
+FR4 - Check that the user is able to add a free text comment. - Record a new species and add a little text comment in the comment text field. - The written text is shown in the comment text field. - The written text is stored correctly in the species record (shown in the summary view).
+
+FR4 - Check that the user is able to add a photo from the phones gallery. - Record a new species, touch the "Add photo" button, select "From gallery" in the modal window that appears and select a photo from the phones gallery. - A thumbnail of the selected photo is shown next to the "Add photo" button. - A copy of the photo is stored correctly in the species record (shown in the summary view).
+
+FR4 - Check that the user is able to shoot a new photo using the phones camera. - Record a new species, touch the "Add photo" button, select "Shoot photo" in the modal window that appears and shoot a photo with the phones camera app. - A thumbnail of the new photo is shown next to the "Add photo" button. - A copy of the new photo is stored correctly in the species record (shown in the summary view).
 
 FR5 - Check that the user is able to delete one species from a recording. - When viewing the list of species in an unsent recording select one species to delete. - Species disappears from the list of species. - Species and all its details are deleted from the recording.
+
 FR5 - Check that the user is able to delete a whole recording. - When viewing the list of unsent recordings select one recording to delete. - Recording disappears from the list of recordings. - Recording and all the species in it are deleted.
+
 FR5 - Check that the user is able to update an unsubmitted recording. - 'Edit' button is clicked on the summary page. - User taken to a page where they are able to ammend the recording. - Recording is updated correctly and the user is taken back to the summary page.
