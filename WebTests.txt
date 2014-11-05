@@ -9,3 +9,7 @@ Example:
 FR1 - Check that system can store the first two days of the earliest permitted year. - Enter 1st March 1971 at date prompt. Hit return, and enter 2nd March 1971 at date prompt. - List of stored dates should now include those dates. - Data is stored.correctly.
 -----------------
 
+
+FR8 - Check that the reserves data can be added to - Try adding some data to the reserves and saving it - The added data should now be saved and on the receives page - The data has been added correctly. 
+
+FR8 - Check that the reserves data can be maintained - Try to edit some of the data that has been added to the reserves - Edit part of the data saved and re-save it - The data should have been updated and should show the changes - The data is saved correctly. 
