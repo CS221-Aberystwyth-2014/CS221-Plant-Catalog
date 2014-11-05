@@ -9,7 +9,12 @@ Example:
 FR1 - Check that system can store the first two days of the earliest permitted year. - Enter 1st March 1971 at date prompt. Hit return, and enter 2nd March 1971 at date prompt. - List of stored dates should now include those dates. - Data is stored.correctly.
 -----------------
 
+FR7 - Check that the server can recieve and store recordings sent from the android app - Send a recording to the server via a HTTP POST - The database should contain the new recording with the correct data - The data is saved correctly
 
 FR8 - Check that the reserves data can be added to - Try adding some data to the reserves and saving it - The added data should now be saved and on the receives page - The data has been added correctly. 
 
 FR8 - Check that the reserves data can be maintained - Try to edit some of the data that has been added to the reserves - Edit part of the data saved and re-save it - The data should have been updated and should show the changes - The data is saved correctly. 
+
+FR9 - Check whether the user is able to sort the recordings by reserve - Select a reserve to display recordings from using the UI - A list of recordings made from the specified reserve only should be displayed and should be in alphabetical order of latin name - Appropriate recordings are being displayed and ordered correctly
+
+FR9 - Check whether the user is able to sort the recordings by date added - Select sort by date (descending or ascending) using the UI - A list of recordings displayed in date order from newest to oldest or vice versa - Recordings are being displayed and are in the correct order
