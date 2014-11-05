@@ -37,3 +37,4 @@ FR5 - Check that the user is able to update an unsubmitted recording. - 'Edit' b
 
 FR6 - Check that the user that the user can send a recording to the server. - The recording button on the app is pressed. - The recording is displayed on the website and is added to the list. - The Recording is sent to the server and then added to the database.Inline with the specification documents. 
 
+FR6 - Check that the recording is sent with FR2 and FR4. - The recording is sent with the information from FR2 and FR4.- The information listed contains FR2, FR 4 and Fr 6. - The data is displayed serverside showing it has passed the test.
