@@ -1,4 +1,4 @@
-Software tests!
+﻿Software tests!
 ----------------
 Everything below should be the following format:
 
@@ -9,7 +9,11 @@ Example:
 FR1 - Check that system can store the first two days of the earliest permitted year. - Enter 1st March 1971 at date prompt. Hit return, and enter 2nd March 1971 at date prompt. - List of stored dates should now include those dates. - Data is stored.correctly.
 -----------------
 
-FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting to fill in contact details. - The user should be prompted to fill in contact details.
+FR1 - Check that the software starts first time without errors on an Android device. - Application will be opened on test device. - Modal window prompting for contact details. - The application should have launched without crashing.
+
+FR1 - Check that the software starts second time with intended behaviour on an Android device. - Application will be opened on test device after previously having its user details set. - Prompt user to start a new recording. - The user should be able to start a new recording without entering their details a second time. 
+
+FR1/FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting to fill in contact details. - The user should be prompted to fill in contact details.
 
 FR2 - Check that the user is able to select a natural reserve for the visit. - Start a new recording and identify the site by starting typing its name. - Drop down menu showing suggestions of the natural reserve. - Suggestions shown are relevant to what the user has started typing.
 
@@ -18,7 +22,7 @@ FR3 - Check that the user is able to select a species or provide a name if it’
 FR4 - Check that the GPS coordinates are obtained correctly from the Android OS. - Record a new species and touch the "Obtain GPS coordinates" button. - GPS coordinates are shown on the details of the newly recorded species. - GPS coordinates are the same as GPS coordinates recorded in parallel to this test.
 
 FR4 - Check that the radio buttons for the abundance store the correct data. - Record a new species and select a radio button "DAFOR". - The selected radio button gets selected (filled in). - The selected abundance is stored correctly in the species record (shown in the summary view).
-
+aoo
 FR4 - Check that the user is able to add a free text comment. - Record a new species and add a little text comment in the comment text field. - The written text is shown in the comment text field. - The written text is stored correctly in the species record (shown in the summary view).
 
 FR4 - Check that the user is able to add a photo from the phones gallery. - Record a new species, touch the "Add photo" button, select "From gallery" in the modal window that appears and select a photo from the phones gallery. - A thumbnail of the selected photo is shown next to the "Add photo" button. - A copy of the photo is stored correctly in the species record (shown in the summary view).
