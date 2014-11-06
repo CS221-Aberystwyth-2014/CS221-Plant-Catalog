@@ -11,9 +11,11 @@ FR1 - Check that system can store the first two days of the earliest permitted y
 
 FR1 - Check that the software starts first time without errors on an Android device. - Application will be opened on test device. - Modal window prompting for contact details. - The application should have launched without crashing.
 
-FR1 - Check that the software starts second time with intended behaviour on an Android device. - Application will be opened on test device after previously having its user details set. - Prompt user to start a new recording. - The user should be able to start a new recording without entering their details a second time. 
+FR1 - Check that the software starts second time with intended behaviour on an Android device. - Application will be opened on test device after previously having its user details set. - Prompt user to start a new recording. - The user should be able to start a new recording from app start without entering their details a second time. 
 
-FR1/FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting to fill in contact details. - The user should be prompted to fill in contact details.
+FR1 - Check that the software allows to record at a different site once a recording has ended. - A recording will be started, test items enterred, then ended. This will be repeated two more times without closing the app. - App should end a recording then prompt user for a new one. - App should have taken and stored three seperate recordings.
+
+FR1/FR2 - Check that the user will be prompted for contact details at first boot up. - Application will be opened for the first time and a new recording will be started. - Modal window prompting for contact details. - The user should be prompted to fill in contact details.
 
 FR2 - Check that the user is able to select a natural reserve for the visit. - Start a new recording and identify the site by starting typing its name. - Drop down menu showing suggestions of the natural reserve. - Suggestions shown are relevant to what the user has started typing.
 
