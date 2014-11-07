@@ -25,8 +25,8 @@ FR7 - Once file sizes have been matched, read to see whether content matches acr
 
 
 FR7 - Ensure that the received MIME message contains:
-1. The information about the visit (FR2)
-2. The information about each species recorded (FR3, FR4).
+       1. The information about the visit (FR2)
+       2. The information about each species recorded (FR3, FR4).
 
 FR8 - Check that the reserves data can be added to - Try adding some data to the reserves and saving it - The added data should now be saved and on the receives page - The data has been added correctly. 
 
