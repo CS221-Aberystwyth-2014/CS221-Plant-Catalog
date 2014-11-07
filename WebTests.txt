@@ -17,6 +17,17 @@ FR7 - Check that server is sending/receiving recordings - send a recording to th
 
 FR7 - Check that server is storing recordings - Look at website and see if recording is displayed, it should contain the new recordings - Data is being stored
 
+FR7 - Confirm whether the recordings sent from the Android app are received and stored in the database. By transmitting a recording from the android device and confirm whether it has been received and stored onto the database.
+
+FR7 - Check for corrupt/ incomplete files, by comparing and seeing whether the file sizes match on both sides. This will get most corrupt files out of the system. 
+
+FR7 - Once file sizes have been matched, read to see whether content matches across all files.
+
+
+FR7 - Ensure that the received MIME message contains:
+1. The information about the visit (FR2)
+2. The information about each species recorded (FR3, FR4).
+
 FR8 - Check that the reserves data can be added to - Try adding some data to the reserves and saving it - The added data should now be saved and on the receives page - The data has been added correctly. 
 
 FR8 - Check that the reserves data can be maintained - Try to edit some of the data that has been added to the reserves - Edit part of the data saved and re-save it - The data should have been updated and should show the changes - The data is saved correctly. 
