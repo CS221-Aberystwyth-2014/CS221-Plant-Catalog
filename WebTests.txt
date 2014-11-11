@@ -32,6 +32,12 @@ FR8 - Check that the reserves data can be added to - Try adding some data to the
 
 FR8 - Check that the reserves data can be maintained - Try to edit some of the data that has been added to the reserves - Edit part of the data saved and re-save it - The data should have been updated and should show the changes - The data is saved correctly. 
 
+FR8 - Check that wrong data can not be inputted into the fields - Try adding numbers into a field that should only accept text and then try to save it - You should be told that you can save it because some fields were filled out incorrectly - The data is not saved. 
+
+FR9 - Check that the user can browse the database - Search for a species that is on the database - This species should now show up on the website so that you can see the data about it - The species shows up.
+
+FR9 - Check the use can browse the database - Search for a species not on the database - This should show up with no species - Nothing shows up. 
+
 FR9 - Check whether the user is able to sort the recordings by reserve - Select a reserve to display recordings from using the UI - A list of recordings made from the specified reserve only should be displayed and should be in alphabetical order of latin name - The list should display recorder's name, the date and the abundance- Appropriate recordings are being displayed and ordered correctly
 
 FR9 - Check whether the user is able to sort the recordings by date added - Select sort by date (descending or ascending) using the UI - A list of recordings displayed in date order from newest to oldest or vice versa - Recordings are being displayed and are in the correct order
