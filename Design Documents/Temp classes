@@ -2,12 +2,14 @@ Java Classes (interfaces)
 
 Demo/Main class: main[fr1]
 Server classes: sentFile[fr6]
-Data classes: dataSpecies[fr3,4,5], dataVisits[fr2,5], dataReserves[fr1], dataNaturalist[fr2]
+Data classes: dataSpecies[fr3,4,5], dataVisits[fr2,5], dataReserves[fr1], dataNaturalist[fr2], dataUpdate[jos56]
+
+input classes, gui, 
 
 Search classes: reservesSearch[fr1], speciesSearch[fr3]
 
 Testing classes: jUnit testing class
 
 Imagecapture classes (jbutton capture, jbutton gallery)
-Buffer classes (imageData, imageCompression)
+Buffer classes (imageData, imageCompression, cacheFile, image)
 Exception classes (thrown errors)
