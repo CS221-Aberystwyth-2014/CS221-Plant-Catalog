@@ -1,0 +1,43 @@
+Startup:
+
+//Initial startup of the app.
+
+	USER -> Presses screen to launch APP
+
+	APP -> IF (internet connection){
+		APP -> launchGUI();
+			
+		APP -> IF(BOOLEAN checkForDatabaseUpdate()){
+				downloadUpdate();
+			ELSE{
+				PRINT("Database up to date!");}
+		ELSE{
+			PRINT("No internet connection!");}
+
+		launchMainGUI();}
+
+
+launchGUI(), launchMainGUI():
+
+//researching this.
+
+
+BOOLLEAN checkForDatabaseUpdate():
+
+	//Returns if a database update is needed based on the result of a version check.
+
+	APP -> 	IF(BOOLEAN checkVersion(this.version)){
+			RETURN FALSE;}
+		ELSE{
+			RETURN TRUE;}
+
+
+BOOLEAN checkVersion(INT version)
+
+	//Checks app database version vs the server version
+	
+	APP -> 	SERVER.get(version)
+
+		IF(version EQUAL this.version){
+			RETURN TRUE;}
+		ELSE RETURN FALSE;}
