@@ -41,3 +41,20 @@ BOOLEAN checkVersion(INT version)
 		IF(version EQUAL this.version){
 			RETURN TRUE;}
 		ELSE RETURN FALSE;}
+
+/*Miscellaneous*/
+//Things that could prove useful but I cannot link directly to other classes due to lack of diagrams.
+
+STRING dataSearch(STRING userInput, STRING databaseColumn):
+	//Returns suggestions based on user typing to aid in finding results.
+	//Exactly what suggestions are returned depends on the field column in the database, databaseColumn.
+	//Likely called on a UI trigger that is caused by the user entering a letter.
+	//Needs researching. Android UI allows dropdown tables/suggestions but I do not remember the library.
+	//VERY INTENSIVE WITH LARGE DATABASES!
+	
+	APP ->	STRING returnPlants;
+		FOR(databaseColumn.itemCount){
+			IF (text.contains(userInput)){
+				returnPlants = dataBase.return(int rowIndex, int columnIndex)+"\n";}
+		RETURN returnPlants;
+
