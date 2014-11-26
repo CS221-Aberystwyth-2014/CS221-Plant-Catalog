@@ -1,0 +1,111 @@
+6. Interface Description
+6. Interface Descriptions
+6.1 Class - Proposed Interface for Main 
+The interface will have some way of starting the application. 
+Most likely via  
+Public static void main (String args[]) {
+there will probably be a thread declaration because its developed for android and we are going to be connecting alot of information together
+thread c;
+Followed up by a run method
+PlantDemo() {
+c = new thread()
+c.start();
+/*The thread is called and created here*/
+}
+Public Void run(){
+/*The run Method to start the application*/
+}
+Public Static void shutDown() {
+/*This method shuts down the application*/
+}
+Public void DataReserves(){
+/*This method gets the reserves and to the main application*/
+}
+Public static void Update() {
+/*This method sends an update by calling the dataUpdate class */
+}
+Public static void getLibrary(){
+/*This method gets the image library from the phone through an xml file made for android java*/
+}
+Public Static void getUserId(){
+/*This method gets the user to log their details when they start up the application */
+}
+Public abstract sResume(){
+/*This method resumes the past session the user had*/
+}
+Public abstract getReserve(){
+/*This gets the reserves from the reserves class*/
+}
+The order is/can be changed and other class interfaces can be merged
+
+6.2 Class - Proposed Interface for DataReserves
+The class will import items  DataNaturalist and DataUpdate 
+public class DataReserves implements interface {
+protected dataUpdate reservesAccess 
+/*Mainly to update the reserves when user logs in*/
+ public dataReserves() {
+/*Will create the data reserve for the interface*/ 
+}
+public createNewReserve(item){
+/*This creates a new reserve when the user clicks the new button*/
+}
+public void contactServer(item){
+/*This method contacts the server and gives it the record*/
+}
+Public abstract serverList() {
+/*The server class list is returned on the website */
+}
+
+The order is/can be changed and other class interfaces can be merged
+
+
+6.3 Class - DataNaturalist
+public class DataNaturalist extends interface {
+Public getID(String name, String no., String location){
+/*This method gets the users information from a visit to one of the nature parks list in the specification*/
+}
+Public static void getGPS(){
+/*This method has the gps get returned in integer format to the server and is done through the xml file*/
+}
+}
+
+The order is/can be changed and other class interfaces can be merged
+
+6.4 Class - DataUpdate
+public class DataUpdate extends interface {
+public void causeUpdate(){
+/*This causes the update*/
+}
+private void getUpdatedRecords(){
+/*Gets the updated records from the update from the server*/
+}
+
+}
+
+The order is/can be changed and other class interfaces can be merged
+
+6.5 Class - ReservesSearch
+public class ReservesSearch extends interface{
+Public rSearch(){
+/*This method searches the records on the reserves database*/
+}
+private void authenticateServerSearch(){
+/*sends the server the call to get some data from the search */
+}
+
+}
+
+The order is/can be changed and other class interfaces can be merged
+
+
+6.6 Class - SpeciesSearch
+public class SpeciesSearch extends interface{
+Public sSearch(){
+/*This method searches the records on the speices database*/
+}
+
+
+}
+
+The order is/can be changed and other class interfaces can be merged
+
