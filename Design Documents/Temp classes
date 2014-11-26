@@ -1,18 +1,15 @@
-Java Classes
+Java Classes (interfaces)
 
-androidDemo - main class [fr1]
-androidServer - sentFile[fr6]
-dataList  - dataSpecies[fr3,4,5], dataVisits[fr2,5], dataReserves[fr2], dataNaturalist[fr2]
-androidChecker - j unit testing class
-androidSearch - speciesSearch 
-androidImagecapture - jbutton capture, jbutton gallery 
- androidbuffer - imageData, imageCompression
+Demo/Main class: main[fr1]
+Server classes: sentFile[fr6]
+Data classes: dataSpecies[fr3,4,5], dataVisits[fr2,5], dataReserves[fr1], dataNaturalist[fr2], dataUpdate[jos56]
 
-sub classes
-imagebuffered
-Thrown errors "class"
- server classes
-search classes
-j unit classes for checker class
+input classes, gui, 
 
-   
+Search classes: reservesSearch[fr1], speciesSearch[fr3]
+
+Testing classes: jUnit testing class
+
+Imagecapture classes (jbutton capture, jbutton gallery)
+Buffer classes (imageData, imageCompression, cacheFile, image)
+Exception classes (thrown errors)
