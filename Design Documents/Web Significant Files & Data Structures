@@ -24,6 +24,21 @@ FR9                     records/index
 
 DATABASE TABLES
 ------------------
-RESERVES    =   rsv_id | rsv_name | rsv_loc | rsv_desc
-RECORDINGS  =   rec_id | rec_sess_id | users_name | users_phone | users_email | time | species | location | abundance | add_info | scene_photo | specimen_photo
-SPECIES     =   species_id | species_name | authority | common_name
+RESERVES
+rsv_id | rsv_name | rsv_loc | rsv_desc
+
+The reserves database table will contain information about the different nature reserves that are available for the android application users
+to choose.  Each reserve record has a unique id, a name, a location and a short description describing the reserve.
+
+RECORDINGS
+rec_id | rec_sess_id | users_name | users_phone | users_email | time | species | location | abundance | add_info | scene_photo | specimen_photo
+
+The recordings database table will contain the recordings submitted by the android application users.  These recordings contain lots
+of information about the location, the species being recorded and the person that recorded the information.  There are also two columns
+(scene_photo and specimen photo) which will store the file locations to the images taken.
+
+SPECIES
+species_id | species_name | authority | common_name
+
+The species database table will contain a list of all the species that are available for the user of the android application to select. 
+This will be populated by the list of plant species provided to us.
