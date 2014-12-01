@@ -1,0 +1,47 @@
+============================
+  RECORDING PAGE ALGORITHM
+============================
+
+connect to database
+
+result -> query database -> fetch all recordings
+
+FOREACH(array_keys(fetch assoc(result)) as column_name) {
+	output column_name as table header
+}
+
+free result(result)
+
+result -> query database -> fetch all recordings
+	
+WHILE(row = fetch assoc(recordings)) {
+	output recording data as table row
+}
+
+
+============================
+  RESERVES PAGE ALGORITHM
+============================
+
+connect to database
+
+result -> query database -> fetch all reserves
+
+FOREACH(array_keys(fetch assoc(result)) as column_name) {
+	output column_name as table header
+	output column for edit and delete as table header
+}
+
+free result(result)
+
+WHILE(row = fetch assoc(reserves)) {
+  output reserve data as table row
+	output button to edit reserve
+	output button to delete reserve
+}
+
+onClick edit reserve
+	redirect to edit reserve page
+
+onClick remove reserve
+	query database -> remove reserve
