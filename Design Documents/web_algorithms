@@ -1,6 +1,10 @@
 ============================
   RECORDING PAGE ALGORITHM
 ============================
+The following algorithm retrieves all of the recordings that have been stored in the database
+and displays them in a table format with appropriate column headers on the web page, with each 
+row of the table showing 1 recordings data.
+============================
 
 connect to database
 
@@ -22,7 +26,11 @@ WHILE(row = fetch assoc(recordings)) {
 ============================
   RESERVES PAGE ALGORITHM
 ============================
-
+The following algorithm retrieves all of the reserves that have been stored in the database
+and displays them in a table format with appropriate column headers on the web page, with each
+row of the table displaying the information about 1 reserve as well as an option to edit or delete
+the reserve.
+============================
 connect to database
 
 result = query database -> fetch all reserves
