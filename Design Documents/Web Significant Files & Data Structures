@@ -1,6 +1,8 @@
 ===========================
  SIGNIFICANT FILES / PAGES
 ===========================
+The following is a list of all the significant files which will be used for the website.
+===========================
 
 ./home/index.php - Will give an overview of the website including what it's for and how to use it.
 ./records/index.php - Will display all of the information about the recordings stored in the database.
@@ -10,6 +12,7 @@
 ./include/footer.php - The pages footer including information about the company.
 ./include/php/fetch_data.php - This file will receive recordings via HTTP POST sent by android devices and will validate then store the recordings in the database.
 ./include/php/session.php - This file will be included by every page and is responsible for maintaining the users session.
+./include/php/connect.php - This file will be included by every page that requires a database connection, its purpose is to set up a connection to the mysql database.
 ./include/php/functions.php - This file will contain useful php functions which are likely to be used a lot by other pages.
 ./include/css/style.css - The main CSS stylesheet for the website, responsible for design and appearance.
 
