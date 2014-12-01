@@ -4,7 +4,7 @@
 
 connect to database
 
-result -> query database -> fetch all recordings
+result = query database -> fetch all recordings
 
 FOREACH(array_keys(fetch assoc(result)) as column_name) {
 	output column_name as table header
@@ -12,7 +12,7 @@ FOREACH(array_keys(fetch assoc(result)) as column_name) {
 
 free result(result)
 
-result -> query database -> fetch all recordings
+result = query database -> fetch all recordings
 	
 WHILE(row = fetch assoc(recordings)) {
 	output recording data as table row
@@ -25,7 +25,7 @@ WHILE(row = fetch assoc(recordings)) {
 
 connect to database
 
-result -> query database -> fetch all reserves
+result = query database -> fetch all reserves
 
 FOREACH(array_keys(fetch assoc(result)) as column_name) {
 	output column_name as table header
@@ -33,6 +33,8 @@ FOREACH(array_keys(fetch assoc(result)) as column_name) {
 }
 
 free result(result)
+
+result = query database -> fetch all reserves
 
 WHILE(row = fetch assoc(reserves)) {
   	output reserve data as table row
