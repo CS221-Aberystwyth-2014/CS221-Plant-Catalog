@@ -29,13 +29,13 @@ result -> query database -> fetch all reserves
 
 FOREACH(array_keys(fetch assoc(result)) as column_name) {
 	output column_name as table header
-	output column for edit and delete as table header
+	output table headers for edit and delete
 }
 
 free result(result)
 
 WHILE(row = fetch assoc(reserves)) {
-  output reserve data as table row
+  	output reserve data as table row
 	output button to edit reserve
 	output button to delete reserve
 }
