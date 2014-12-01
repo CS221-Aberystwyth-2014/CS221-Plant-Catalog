@@ -42,7 +42,7 @@ public interface PlantCatalogInterface {
 	 *  if local XML file is available uses method
 	 *  inside this instance to parse the content.
 	 *  Else calls setNaturalistDetails() passing the naturalist object.
-	 *  @return naturalist new instance of Naturalist created.
+	 *  @return Naturalist new instance of Naturalist created.
 	 */
 	public Naturalist obtainNaturalist();
 
@@ -51,7 +51,7 @@ public interface PlantCatalogInterface {
 	 *  Takes user input to set contact details for the naturalist provided.
 	 *  @param Naturalist naturalist sets contact details for this object.
 	 */
-	public void setNaturalistDetails();
+	public void setNaturalistDetails(Naturalist naturalist);
 
 	/** Checks for updates of the reserves and species data.
 	 *
