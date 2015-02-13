@@ -100,3 +100,7 @@ This will be populated by the list of plant species provided to us.
 
 HTTP POST REQUEST
 -------------------
+The http post request being recieved will contain the following data:
+users_name | users_email | users_phone | reserve | time | species | latitude | longitude | abundance | add_info
+
+The latitude and longitude of the recording location will be converted into an OS Grid Reference before being stored in the database.
