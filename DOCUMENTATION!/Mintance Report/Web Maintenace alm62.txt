@@ -1,0 +1,25 @@
+Rebuilding/Testing
+When rebuilding the website you will be required to host the website on a server, this can be done locally  (lamp, mamp, camp etc…). The pages of the website need to be put into a folder on the server. Optionally you can store the database under a domain name of your choice.
+
+
+The database will need to be re-set up on a server. All the files that you need are in a folder on the distributed compact disc.
+
+
+All testing that has been and can be done in regards to the website can be found in the testing specification, test results are displayed in a column (pass/fail), expected results are also detailed in a separate column. If you follow the testing table any problems with the websites functionality or usability will be alerted and detailed.
+
+
+To add a test, just add a new row to the table and fill out the different columns using similar language and presentation formatting as to the other rows that are already present in the table. 
+
+
+Program Structure
+The design of the website is relatively simple which allows ease of use of the application. The navigation of the website is somewhat natural, meaningful names are given to pages based on their function and the required action of the user.
+
+
+There is a login page for the administrator (user) to use to gain access to the website. Once past the login, the user (administrator) can use the application to create, edit and delete reserves. The recordings page displays all recordings in the database, this page makes use of pagination to organise the data per page making it easier for the user to click through the site whilst avoiding needless scrolling. On the recordings page the user can sort plants by both date and species. A reserve can be selected to filter down a search for recordings of plants specific to that reserve selected. 
+
+
+Component diagram can be found in the design specification on page 5
+
+Web sequence diagram can be found in the design specification on page 13
+
+Method/algorithms can be found in the design specification on pages 15 and 16 

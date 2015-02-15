@@ -1,0 +1,53 @@
+
+Program Description
+---------------------
+The Web App has been created using html, css and php with all the data (recordings, reserves & species) being stored in a mysql database.  
+The Main home page of the  Web App explains the purpose and usage of the website in order to give the user a general overview of it's functionality.
+
+The Web App also has a authentication system where an authorized user can log in to the website in order to gain additional functionality if the username
+and password they have entered is correct. The websites login username and password is stored within variables in the login php file.
+
+It is possible to view a list of all the recordings made (sent from users of the android app) by navigating to the "recordings" page of the website.  On this
+page it is also possible to view only recordings made at a specific reserve by using the drop down menu provided, this search functionality is achieved by
+using an sql statement which retrieves only recordings which match the specified criteria from the database.  The list of recordings can also be sorted
+in order based on the species name or the date the recording was made which is achieved by using the "ORDER BY" keyword in sql.  In addition to all of the
+above the user can also click on the small thumbnail image of either the scene or specimen photo in order to view the full-sized image, this functionality
+was achieved by using a resource called Lightbox by Lokesh Dhakar (http://lokeshdhakar.com/projects/lightbox2/).
+
+A complete list of all the reserves stored in the database can be viewed by navigating to the "reserves" page of the website, on this page it is also possible to
+edit, delete or add reserves however these options are only available to authenticated users.  The reserves are sorted in alphabetical order for convenience.  
+To edit or delete a specific reserve there are buttons at the end of each reserve row.  Clicking the delete button executes an sql statement which removes 
+the corresponding reserve from the reserves database table.  Clicking on the edit button takes the user to an edit reserve page ("edit.php") 
+which displays the current information about the reserve and gives the user the option to change it.  The edit page contains field validation code which 
+validates any user input to make sure it is not malicious and is correctly formatted, regular expressions and built-in php functions like "strlen" 
+are used in order to achieve this.  If the user does enter invalid input, a message is shown to the user pointing out the errors and the data is not stored 
+in the database.  It is possible to add a reserve by clicking on the "Add Reserve" button again found on the "reserves" page of the website, 
+this works in a similar fashion to the edit functionality however in this case the form fields will not be pre-populated with existing data.  The user of 
+the web app can enter information about a reserve they wish to add and this input will be validated before the new reserve is added to the 'reserves' database 
+table.
+
+The recordings data sent from the android app via HTTP Post is recieved by a page called "fetch_data".  This page validates then stores the recieved recordings data into
+the 'recordings' database table but only if the validation passes.  Every time a request is recieved information about the HTTP Post request is stored within
+a log file.
+
+
+Data Areas
+--------------------
+See Significant Data Structures for the Web App in the Design Document.
+
+
+Algorithms
+--------------------
+See Web Algorithms section in the Design Document.
+
+
+Files
+--------------------
+When the Web App recieves a HTTP Post Request a log file containing details of the request is created.  If the log file already exists however, future 
+requests will be appended to the bottom of the file.  The information in these logs is useful as it displays any errors that may have occurred during
+the recieving of the data.
+
+
+
+
+
