@@ -1,0 +1,11 @@
+Suggestions for improvements:
+This is what could be improved from the java side and will be formatted as a list.
+Java Improvements:
+More compatibility 
+The android app only runs on 4.0 to 4.4.2, this restricts the software to newer phones only and not older phones running android 2,3 and newer versions like 5. The lower versions are still used by a lot of people and they are lost potential customers.
+"Success! Record sent"
+There is no after prompt stating the record is sent . A simple toast message saying  "Success! Record sent"  tells the user that the record has been sent to the database and then they can safely move on to another recording session.
+GPS always shown
+A not so needed feature but a feature that shows the exact gps co-ordinates of the location on the top of the screen if the person has location on. If they want to write it down on paper for later use.
+Light Function
+A feature useful if the user is working at night and cannot see what they are looking at on the screen. The light provides the ability to see the site and species at night.

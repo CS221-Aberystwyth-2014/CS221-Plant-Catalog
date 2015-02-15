@@ -1,0 +1,15 @@
+Physical Limitations of the program
+There are always limiting factors with any project and there were with this project.
+Java Portion:
+•	The program is limited to 4.0 of android as its lowest point of entry. About 15 - 25% of users still use lower versions of android which is a missed demograph for use with the app. 
+•	The program can crash at any time and can interrupt sending if does.
+•	The location can malfunction on the phone and corrupt the gps data
+•	The user can potentially fiddle with the data structures if they open the apk and change the code with the correct tools.
+•	The  contact details allow any character to be put in, such as [: as a name and 0000000000 as a number
+•	The apps speed is dependant on how many apps are open in the background and the phones speed
+•	The app can freeze if overloaded by something or freeze because of a memory allocation bug 
+
+
+  
+
+
